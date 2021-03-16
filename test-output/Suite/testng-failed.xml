@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.restassured.listeners.ListenerClass"/>
+    <listener class-name="com.restassured.listeners.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.restassured.testcases.RestCountriesTest">
+        <methods>
+          <include name="getCountryDetailsTest" invocation-numbers="0 1"/>
+          <include name="afterSuite"/>
+          <include name="setUpSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.restassured.testcases.RestCountriesTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

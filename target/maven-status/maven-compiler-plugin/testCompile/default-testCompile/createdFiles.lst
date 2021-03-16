@@ -1,0 +1,3 @@
+com\restassured\testcases\BestBuyAPITests.class
+com\restassured\testcases\BaseTest.class
+com\restassured\testcases\RestCountriesTest.class
